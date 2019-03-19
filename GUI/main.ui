@@ -14,258 +14,395 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QTabWidget" name="Mama_Sekmesi">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>30</y>
-      <width>251</width>
-      <height>121</height>
+      <x>0</x>
+      <y>0</y>
+      <width>821</width>
+      <height>171</height>
      </rect>
     </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="currentIndex">
-     <number>0</number>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>16</width>
-      <height>16</height>
-     </size>
-    </property>
-    <widget class="QWidget" name="Mama_Kabi_Sekme">
-     <attribute name="title">
-      <string>Mama Kabı</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>251</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout">
-       <item>
-        <widget class="QLabel" name="Mamakap_label">
-         <property name="font">
-          <font>
-           <family>Lato Heavy</family>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
+    <layout class="QHBoxLayout" name="info_layout" stretch="50,50,50">
+     <property name="leftMargin">
+      <number>25</number>
+     </property>
+     <property name="topMargin">
+      <number>25</number>
+     </property>
+     <property name="rightMargin">
+      <number>25</number>
+     </property>
+     <property name="bottomMargin">
+      <number>25</number>
+     </property>
+     <item>
+      <widget class="QTabWidget" name="Su_Sekmesi">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="Su_Kabi_Sekme">
+        <attribute name="title">
+         <string>Su Kabı</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_5">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="text">
-          <string>Mama Kabının Durumu:</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="QLabel" name="sukap_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Su Kabının Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="sukap_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="mamakap_data">
-         <property name="font">
-          <font>
-           <family>Lato</family>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
+       </widget>
+       <widget class="QWidget" name="Su_Deposu_Sekme">
+        <attribute name="title">
+         <string>Su Deposu</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_6">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="text">
-          <string>Veri Bulunamadı</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <widget class="QLabel" name="sudepo_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text">
+             <string>Su Deposunun Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="sudepo_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Mama_Depo_Sekme">
-     <attribute name="title">
-      <string>Mama Deposu</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>251</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_2">
-       <item>
-        <widget class="QLabel" name="mamadepo_label">
-         <property name="font">
-          <font>
-           <family>Lato Heavy</family>
-           <weight>75</weight>
-           <italic>false</italic>
-           <bold>true</bold>
-           <strikeout>false</strikeout>
-          </font>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="Kum_Sekmesi">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="Kum_Kabi_Sekme">
+        <attribute name="title">
+         <string>Kum Kabı</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_9">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="text">
-          <string>Mama Deposunun Durumu:</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_9">
+          <item>
+           <widget class="QLabel" name="kumkap_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Kum Kabının Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="kumkap_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="accessibleName">
+             <string/>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="mamadepo_data">
-         <property name="font">
-          <font>
-           <family>Lato</family>
-          </font>
+       </widget>
+       <widget class="QWidget" name="Kum_Deposu_Sekme">
+        <attribute name="title">
+         <string>Kum Deposu</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_10">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="text">
-          <string>Veri Bulunamadı</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_10">
+          <item>
+           <widget class="QLabel" name="kumdepo_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text">
+             <string>Kum Deposunun Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="kumdepo_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-   </widget>
-   <widget class="QTabWidget" name="Su_Sekmesi">
-    <property name="geometry">
-     <rect>
-      <x>30</x>
-      <y>20</y>
-      <width>251</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="cursor">
-     <cursorShape>PointingHandCursor</cursorShape>
-    </property>
-    <property name="currentIndex">
-     <number>1</number>
-    </property>
-    <property name="iconSize">
-     <size>
-      <width>16</width>
-      <height>16</height>
-     </size>
-    </property>
-    <widget class="QWidget" name="Su_Kabi_Sekme">
-     <attribute name="title">
-      <string>Su Kabı</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_5">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>251</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_5">
-       <item>
-        <widget class="QLabel" name="sukap_label">
-         <property name="font">
-          <font>
-           <family>Lato Heavy</family>
-           <weight>75</weight>
-           <bold>true</bold>
-          </font>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTabWidget" name="Mama_Sekmesi">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="tabShape">
+        <enum>QTabWidget::Rounded</enum>
+       </property>
+       <property name="currentIndex">
+        <number>1</number>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>16</width>
+         <height>16</height>
+        </size>
+       </property>
+       <widget class="QWidget" name="Mama_Kabi_Sekme">
+        <attribute name="title">
+         <string>Mama Kabı</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="text">
-          <string>Su Kabının Durumu:</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <item>
+           <widget class="QLabel" name="Mamakap_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mama Kabının Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="mamakap_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+              <weight>50</weight>
+              <italic>false</italic>
+              <bold>false</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="sukap_data">
-         <property name="font">
-          <font>
-           <family>Lato</family>
-           <weight>50</weight>
-           <italic>false</italic>
-           <bold>false</bold>
-          </font>
+       </widget>
+       <widget class="QWidget" name="Mama_Depo_Sekme">
+        <attribute name="title">
+         <string>Mama Deposu</string>
+        </attribute>
+        <widget class="QWidget" name="verticalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>251</width>
+           <height>81</height>
+          </rect>
          </property>
-         <property name="accessibleName">
-          <string/>
-         </property>
-         <property name="text">
-          <string>Veri Bulunamadı</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <item>
+           <widget class="QLabel" name="mamadepo_label">
+            <property name="font">
+             <font>
+              <family>Lato Heavy</family>
+              <weight>75</weight>
+              <italic>false</italic>
+              <bold>true</bold>
+              <strikeout>false</strikeout>
+             </font>
+            </property>
+            <property name="text">
+             <string>Mama Deposunun Durumu:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="mamadepo_data">
+            <property name="font">
+             <font>
+              <family>Lato</family>
+             </font>
+            </property>
+            <property name="text">
+             <string>Veri Bulunamadı</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
-    <widget class="QWidget" name="Su_Deposu_Sekme">
-     <attribute name="title">
-      <string>Su Deposu</string>
-     </attribute>
-     <widget class="QWidget" name="verticalLayoutWidget_6">
-      <property name="geometry">
-       <rect>
-        <x>0</x>
-        <y>0</y>
-        <width>251</width>
-        <height>81</height>
-       </rect>
-      </property>
-      <layout class="QVBoxLayout" name="verticalLayout_6">
-       <item>
-        <widget class="QLabel" name="sudepo_label">
-         <property name="font">
-          <font>
-           <family>Lato Heavy</family>
-           <weight>75</weight>
-           <italic>false</italic>
-           <bold>true</bold>
-           <strikeout>false</strikeout>
-          </font>
-         </property>
-         <property name="text">
-          <string>Su Deposunun Durumu:</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-       <item>
-        <widget class="QLabel" name="sudepo_data">
-         <property name="font">
-          <font>
-           <family>Lato</family>
-          </font>
-         </property>
-         <property name="text">
-          <string>Veri Bulunamadı</string>
-         </property>
-         <property name="alignment">
-          <set>Qt::AlignCenter</set>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </widget>
-    </widget>
+       </widget>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
  </widget>
