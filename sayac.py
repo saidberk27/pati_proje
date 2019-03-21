@@ -18,7 +18,7 @@ class Ui_Form(object):
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setGeometry(QtCore.QRect(150, 210, 101, 31))
         self.pushButton.setObjectName("pushButton")
-        self.sayac = 0
+        self.sayac = 0 #!!! sayaci sifirla
         self.retranslateUi(Form)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
@@ -27,7 +27,7 @@ class Ui_Form(object):
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "TextLabel"))
         self.pushButton.setText(_translate("Form", "PushButton"))
-        self.pushButton.clicked.connect(self.fonks)
+        self.pushButton.clicked.connect(self.fonks) # !!! atama yap
         
     def arttir(self):
         self.sayac = self.sayac + 1

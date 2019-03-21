@@ -286,16 +286,16 @@ class Ui_MainWindow(object):
         self.Mama_Sekmesi.setTabText(self.Mama_Sekmesi.indexOf(self.Mama_Depo_Sekme), _translate("MainWindow", "Mama Deposu"))
         self.InternetveKameraSekmesi.setTabText(self.InternetveKameraSekmesi.indexOf(self.Tarayici_tab), _translate("MainWindow", "İnternet Tarayıcısı"))
         self.InternetveKameraSekmesi.setTabText(self.InternetveKameraSekmesi.indexOf(self.tab_2), _translate("MainWindow", "Kulube İçi Canlı Görüntü"))
-        
+   #Sayaç Kısmı Basitleştirilmiş Hali İçin Sayac.py çalıştır         
     def sensorData(self):
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.datamain)
         self.timer.start(1000)
         
     def datamain(self):
-        self.sayac += 1
-        self.mamakap_data.setText(str(self.sayac))
-        
+        self.f = open("/dev/ttyUSB0","r")
+        self.mamakap_data.setText(self.f.readlines()[0])
+   #SON     
 
 from PyQt5 import QtWebKitWidgets
 
