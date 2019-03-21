@@ -14,37 +14,16 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <property name="sizePolicy">
-    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-     <horstretch>0</horstretch>
-     <verstretch>0</verstretch>
-    </sizepolicy>
-   </property>
-   <property name="minimumSize">
-    <size>
-     <width>2000</width>
-     <height>1500</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>1500</width>
-     <height>1500</height>
-    </size>
-   </property>
    <widget class="QWidget" name="verticalLayoutWidget_3">
     <property name="geometry">
      <rect>
       <x>0</x>
       <y>10</y>
-      <width>1235</width>
+      <width>831</width>
       <height>681</height>
      </rect>
     </property>
-    <layout class="QVBoxLayout" name="verticalLayout_3" stretch="0,0">
-     <property name="spacing">
-      <number>25</number>
-     </property>
+    <layout class="QVBoxLayout" name="verticalLayout_3">
      <property name="leftMargin">
       <number>20</number>
      </property>
@@ -75,13 +54,13 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>400</width>
+           <width>250</width>
            <height>200</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>400</width>
+           <width>250</width>
            <height>200</height>
           </size>
          </property>
@@ -106,8 +85,8 @@
             <rect>
              <x>0</x>
              <y>0</y>
-             <width>402</width>
-             <height>202</height>
+             <width>251</width>
+             <height>81</height>
             </rect>
            </property>
            <layout class="QVBoxLayout" name="verticalLayout_5">
@@ -130,12 +109,6 @@
             </item>
             <item>
              <widget class="QLabel" name="sukap_data">
-              <property name="minimumSize">
-               <size>
-                <width>400</width>
-                <height>0</height>
-               </size>
-              </property>
               <property name="font">
                <font>
                 <family>Lato</family>
@@ -221,7 +194,7 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>400</width>
+           <width>250</width>
            <height>200</height>
           </size>
          </property>
@@ -363,7 +336,7 @@
          </property>
          <property name="minimumSize">
           <size>
-           <width>400</width>
+           <width>250</width>
            <height>200</height>
           </size>
          </property>
@@ -499,14 +472,8 @@
       <widget class="QTabWidget" name="InternetveKameraSekmesi">
        <property name="minimumSize">
         <size>
-         <width>1200</width>
-         <height>200</height>
-        </size>
-       </property>
-       <property name="maximumSize">
-        <size>
-         <width>1200</width>
-         <height>500</height>
+         <width>0</width>
+         <height>150</height>
         </size>
        </property>
        <property name="currentIndex">
@@ -550,14 +517,14 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1200</width>
+           <width>801</width>
            <height>4100</height>
           </rect>
          </property>
          <property name="minimumSize">
           <size>
-           <width>1200</width>
-           <height>200</height>
+           <width>0</width>
+           <height>100</height>
           </size>
          </property>
          <property name="url">
@@ -573,40 +540,6 @@
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>849</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <widget class="QMenu" name="menuAna_Sayfa">
-    <property name="title">
-     <string>Ana Sayfa</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menu_leti_im_Bilgileri">
-    <property name="title">
-     <string>İletişim Bilgileri</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuSa_l_k_Bilgi">
-    <property name="title">
-     <string>Sağlık Bilgi</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuProje_Sahipleri">
-    <property name="title">
-     <string>Proje Sahipleri</string>
-    </property>
-   </widget>
-   <addaction name="menuAna_Sayfa"/>
-   <addaction name="menu_leti_im_Bilgileri"/>
-   <addaction name="menuSa_l_k_Bilgi"/>
-   <addaction name="menuProje_Sahipleri"/>
   </widget>
  </widget>
  <customwidgets>
