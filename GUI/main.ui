@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1372</width>
-    <height>826</height>
+    <width>1439</width>
+    <height>843</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <rect>
       <x>-20</x>
       <y>0</y>
-      <width>1391</width>
+      <width>1461</width>
       <height>897</height>
      </rect>
     </property>
@@ -316,7 +316,7 @@
           <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <property name="iconSize">
           <size>
@@ -833,12 +833,15 @@
          <string>İnternet Tarayıcısı</string>
         </attribute>
         <widget class="QWebView" name="Tarayici">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
          <property name="geometry">
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1371</width>
-           <height>350</height>
+           <width>1441</width>
+           <height>500</height>
           </rect>
          </property>
          <property name="sizePolicy">
@@ -850,13 +853,13 @@
          <property name="minimumSize">
           <size>
            <width>700</width>
-           <height>350</height>
+           <height>500</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
            <width>1500</width>
-           <height>350</height>
+           <height>500</height>
           </size>
          </property>
          <property name="url">
@@ -911,7 +914,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1372</width>
+     <width>1439</width>
      <height>27</height>
     </rect>
    </property>
