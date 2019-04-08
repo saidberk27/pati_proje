@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1439</width>
-    <height>843</height>
+    <width>1413</width>
+    <height>855</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -316,7 +316,7 @@
           <cursorShape>PointingHandCursor</cursorShape>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <property name="iconSize">
           <size>
@@ -499,7 +499,7 @@
           <enum>QTabWidget::Rounded</enum>
          </property>
          <property name="currentIndex">
-          <number>1</number>
+          <number>0</number>
          </property>
          <property name="iconSize">
           <size>
@@ -814,7 +814,7 @@
         </size>
        </property>
        <property name="currentIndex">
-        <number>0</number>
+        <number>3</number>
        </property>
        <widget class="QWidget" name="Tarayici_tab">
         <property name="sizePolicy">
@@ -872,7 +872,7 @@
          </property>
         </widget>
        </widget>
-       <widget class="QWidget" name="tab_2">
+       <widget class="QWidget" name="kulubeicicanligoruntu_tab">
         <attribute name="title">
          <string>Kulube İçi Canlı Görüntü</string>
         </attribute>
@@ -904,61 +904,497 @@
          </property>
         </widget>
        </widget>
+       <widget class="QWidget" name="kum_tab">
+        <attribute name="title">
+         <string>Kum Kısmı</string>
+        </attribute>
+        <widget class="QWidget" name="horizontalLayoutWidget">
+         <property name="geometry">
+          <rect>
+           <x>-1</x>
+           <y>0</y>
+           <width>1431</width>
+           <height>371</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <item>
+           <widget class="QToolBox" name="kumbox">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="page">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1429</width>
+               <height>299</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Kum Kabı</string>
+             </attribute>
+             <widget class="QWidget" name="verticalLayoutWidget_7">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1578</width>
+                <height>301</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_4">
+               <item>
+                <widget class="QPushButton" name="kumkapbeto">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Kum Kabını Boşalt</string>
+                 </property>
+                 <property name="autoRepeatDelay">
+                  <number>2000</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="kumkaplabel">
+                 <property name="font">
+                  <font>
+                   <pointsize>15</pointsize>
+                   <weight>75</weight>
+                   <italic>true</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Kum kabının genel amacı kullanıcının belirlediği tarihlerde kum kabını boşaltmaktır fakat yarışma amaçlı kabın fonksiyonları butona atanmıştır.</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>1429</width>
+               <height>299</height>
+              </rect>
+             </property>
+             <attribute name="label">
+              <string>Kum Deposu</string>
+             </attribute>
+             <widget class="QWidget" name="verticalLayoutWidget_8">
+              <property name="geometry">
+               <rect>
+                <x>0</x>
+                <y>0</y>
+                <width>1431</width>
+                <height>301</height>
+               </rect>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_8">
+               <item>
+                <widget class="QPushButton" name="kumdepobuton">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>150</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>Kum Deposunu Boşalt</string>
+                 </property>
+                 <property name="autoRepeatDelay">
+                  <number>2000</number>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QLabel" name="label_3">
+                 <property name="font">
+                  <font>
+                   <pointsize>15</pointsize>
+                   <weight>75</weight>
+                   <italic>true</italic>
+                   <bold>true</bold>
+                  </font>
+                 </property>
+                 <property name="text">
+                  <string>Kum deposunun genel amacı kullanıcının belirlediği tarihlerde kum deposunu boşaltmaktır fakat yarışma amaçlı deponun fonksiyonları butona atanmıştır.</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="iletisim_tab">
+        <attribute name="title">
+         <string>İletişim</string>
+        </attribute>
+        <widget class="QWidget" name="horizontalLayoutWidget_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>1431</width>
+           <height>401</height>
+          </rect>
+         </property>
+         <layout class="QHBoxLayout" name="iletisimlayout">
+          <item>
+           <widget class="QFrame" name="framelogo">
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="iletismlogo">
+             <property name="geometry">
+              <rect>
+               <x>6</x>
+               <y>0</y>
+               <width>290</width>
+               <height>400</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>290</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>290</width>
+               <height>400</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>TextLabel2</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QFrame" name="iletism_frame">
+            <property name="maximumSize">
+             <size>
+              <width>300</width>
+              <height>400</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QWidget" name="formLayoutWidget">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>301</width>
+               <height>401</height>
+              </rect>
+             </property>
+             <layout class="QFormLayout" name="formLayout">
+              <item row="0" column="0">
+               <widget class="QLabel" name="epostalabel">
+                <property name="font">
+                 <font>
+                  <weight>50</weight>
+                  <bold>false</bold>
+                  <underline>true</underline>
+                  <strikeout>false</strikeout>
+                  <kerning>true</kerning>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>E-Posta:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QLineEdit" name="epostaline"/>
+              </item>
+              <item row="1" column="0">
+               <spacer name="boslukiletism4">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="1">
+               <spacer name="boslukiletism2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="parolalabel">
+                <property name="font">
+                 <font>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Parola:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QLineEdit" name="parolaline"/>
+              </item>
+              <item row="3" column="0">
+               <spacer name="boslukiletism3">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="3" column="1">
+               <spacer name="boslukiletism">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <widget class="QLabel" name="mesajlabel">
+                <property name="font">
+                 <font>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Mesaj</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0" colspan="2">
+               <widget class="QTextEdit" name="icerikbox">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>200</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="konulabel">
+                <property name="font">
+                 <font>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Konu:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="konuline"/>
+              </item>
+              <item row="7" column="0">
+               <widget class="QPushButton" name="gonder_btn">
+                <property name="text">
+                 <string>Gönder</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QLabel" name="mail_info_label">
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_11">
+            <item>
+             <widget class="QLabel" name="basliklabel">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>25</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>24</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Cezeri Robotics ©</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="forminfolabel">
+              <property name="maximumSize">
+               <size>
+                <width>16777214</width>
+                <height>35</height>
+               </size>
+              </property>
+              <property name="font">
+               <font>
+                <pointsize>14</pointsize>
+                <italic>true</italic>
+                <underline>true</underline>
+               </font>
+              </property>
+              <property name="text">
+               <string>Bizimle iletişme geçmek için yandaki formu doldurabilirsiniz.</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="telefonlabel">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>Telefon:0507 125 3020</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="epostalabel_2">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>E-Posta: cezerirobotics@gmail.com</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="instagramlabel">
+              <property name="font">
+               <font>
+                <pointsize>16</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>İnstagram: @proje_pati03</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+       </widget>
       </widget>
      </item>
     </layout>
    </widget>
-  </widget>
-  <widget class="QMenuBar" name="menuBar">
-   <property name="geometry">
-    <rect>
-     <x>0</x>
-     <y>0</y>
-     <width>1439</width>
-     <height>27</height>
-    </rect>
-   </property>
-   <property name="defaultUp">
-    <bool>false</bool>
-   </property>
-   <widget class="QMenu" name="menuAna_Sayfa">
-    <property name="title">
-     <string>Ana Sayfa</string>
-    </property>
-   </widget>
-   <widget class="QMenu" name="menuHata_Rapor">
-    <property name="title">
-     <string>Proje Detayları</string>
-    </property>
-    <addaction name="action3B_Tasar_m"/>
-    <addaction name="actionProje_Raporu"/>
-    <addaction name="separator"/>
-    <addaction name="actionKullan_lan_Sensorler"/>
-    <addaction name="actionKullan_lan_Kartlar"/>
-    <addaction name="actionKullan_lan_Programlama_Dilleri_ve_Algoritmalar"/>
-   </widget>
-   <widget class="QMenu" name="menuEme_i_Ge_enler">
-    <property name="title">
-     <string>Emeği Geçenler</string>
-    </property>
-    <addaction name="actionProje_Ekibi"/>
-    <addaction name="actionTe_ekk_rler"/>
-   </widget>
-   <widget class="QMenu" name="menuProje_Detaylar">
-    <property name="title">
-     <string>Seçenekler</string>
-    </property>
-    <addaction name="actionAr_za_Raporu_G_nder"/>
-    <addaction name="action_leti_im_Bilgilerini_D_zenle"/>
-    <addaction name="actionKaynak_Kodlar_n_G_r"/>
-    <addaction name="separator"/>
-    <addaction name="actionTelif_Hakk"/>
-    <addaction name="actionS_zle_me"/>
-   </widget>
-   <addaction name="menuAna_Sayfa"/>
-   <addaction name="menuHata_Rapor"/>
-   <addaction name="menuEme_i_Ge_enler"/>
-   <addaction name="menuProje_Detaylar"/>
   </widget>
   <action name="actionAr_za_Raporu_G_nder">
    <property name="text">
