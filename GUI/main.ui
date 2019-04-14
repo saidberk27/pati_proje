@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1413</width>
-    <height>855</height>
+    <width>1352</width>
+    <height>794</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,8 +19,8 @@
      <rect>
       <x>-20</x>
       <y>0</y>
-      <width>1461</width>
-      <height>897</height>
+      <width>1371</width>
+      <height>901</height>
      </rect>
     </property>
     <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -499,7 +499,7 @@
           <enum>QTabWidget::Rounded</enum>
          </property>
          <property name="currentIndex">
-          <number>0</number>
+          <number>1</number>
          </property>
          <property name="iconSize">
           <size>
@@ -814,7 +814,7 @@
         </size>
        </property>
        <property name="currentIndex">
-        <number>3</number>
+        <number>0</number>
        </property>
        <widget class="QWidget" name="Tarayici_tab">
         <property name="sizePolicy">
@@ -840,7 +840,7 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1441</width>
+           <width>1351</width>
            <height>500</height>
           </rect>
          </property>
@@ -904,154 +904,6 @@
          </property>
         </widget>
        </widget>
-       <widget class="QWidget" name="kum_tab">
-        <attribute name="title">
-         <string>Kum Kısmı</string>
-        </attribute>
-        <widget class="QWidget" name="horizontalLayoutWidget">
-         <property name="geometry">
-          <rect>
-           <x>-1</x>
-           <y>0</y>
-           <width>1431</width>
-           <height>371</height>
-          </rect>
-         </property>
-         <layout class="QHBoxLayout" name="horizontalLayout">
-          <item>
-           <widget class="QToolBox" name="kumbox">
-            <property name="currentIndex">
-             <number>0</number>
-            </property>
-            <widget class="QWidget" name="page">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>1429</width>
-               <height>299</height>
-              </rect>
-             </property>
-             <attribute name="label">
-              <string>Kum Kabı</string>
-             </attribute>
-             <widget class="QWidget" name="verticalLayoutWidget_7">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>1578</width>
-                <height>301</height>
-               </rect>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_4">
-               <item>
-                <widget class="QPushButton" name="kumkapbeto">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>150</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>150</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string>Kum Kabını Boşalt</string>
-                 </property>
-                 <property name="autoRepeatDelay">
-                  <number>2000</number>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="kumkaplabel">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <italic>true</italic>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Kum kabının genel amacı kullanıcının belirlediği tarihlerde kum kabını boşaltmaktır fakat yarışma amaçlı kabın fonksiyonları butona atanmıştır.</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </widget>
-            <widget class="QWidget" name="page_2">
-             <property name="geometry">
-              <rect>
-               <x>0</x>
-               <y>0</y>
-               <width>1429</width>
-               <height>299</height>
-              </rect>
-             </property>
-             <attribute name="label">
-              <string>Kum Deposu</string>
-             </attribute>
-             <widget class="QWidget" name="verticalLayoutWidget_8">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>0</y>
-                <width>1431</width>
-                <height>301</height>
-               </rect>
-              </property>
-              <layout class="QVBoxLayout" name="verticalLayout_8">
-               <item>
-                <widget class="QPushButton" name="kumdepobuton">
-                 <property name="minimumSize">
-                  <size>
-                   <width>0</width>
-                   <height>150</height>
-                  </size>
-                 </property>
-                 <property name="maximumSize">
-                  <size>
-                   <width>16777215</width>
-                   <height>150</height>
-                  </size>
-                 </property>
-                 <property name="text">
-                  <string>Kum Deposunu Boşalt</string>
-                 </property>
-                 <property name="autoRepeatDelay">
-                  <number>2000</number>
-                 </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="QLabel" name="label_3">
-                 <property name="font">
-                  <font>
-                   <pointsize>15</pointsize>
-                   <weight>75</weight>
-                   <italic>true</italic>
-                   <bold>true</bold>
-                  </font>
-                 </property>
-                 <property name="text">
-                  <string>Kum deposunun genel amacı kullanıcının belirlediği tarihlerde kum deposunu boşaltmaktır fakat yarışma amaçlı deponun fonksiyonları butona atanmıştır.</string>
-                 </property>
-                </widget>
-               </item>
-              </layout>
-             </widget>
-            </widget>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-       </widget>
        <widget class="QWidget" name="iletisim_tab">
         <attribute name="title">
          <string>İletişim</string>
@@ -1086,13 +938,13 @@
                <x>6</x>
                <y>0</y>
                <width>290</width>
-               <height>400</height>
+               <height>321</height>
               </rect>
              </property>
              <property name="minimumSize">
               <size>
                <width>290</width>
-               <height>400</height>
+               <height>0</height>
               </size>
              </property>
              <property name="maximumSize">
@@ -1130,7 +982,7 @@
                <x>0</x>
                <y>0</y>
                <width>301</width>
-               <height>401</height>
+               <height>321</height>
               </rect>
              </property>
              <layout class="QFormLayout" name="formLayout">
@@ -1220,6 +1072,21 @@
                 </property>
                </spacer>
               </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="konulabel">
+                <property name="font">
+                 <font>
+                  <underline>true</underline>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Konu:</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QLineEdit" name="konuline"/>
+              </item>
               <item row="5" column="0" colspan="2">
                <widget class="QLabel" name="mesajlabel">
                 <property name="font">
@@ -1244,21 +1111,6 @@
                  </size>
                 </property>
                </widget>
-              </item>
-              <item row="4" column="0">
-               <widget class="QLabel" name="konulabel">
-                <property name="font">
-                 <font>
-                  <underline>true</underline>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>Konu:</string>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="QLineEdit" name="konuline"/>
               </item>
               <item row="7" column="0">
                <widget class="QPushButton" name="gonder_btn">
@@ -1285,6 +1137,9 @@
            <layout class="QVBoxLayout" name="verticalLayout_11">
             <item>
              <widget class="QLabel" name="basliklabel">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
               <property name="minimumSize">
                <size>
                 <width>0</width>
@@ -1323,7 +1178,9 @@
               <property name="font">
                <font>
                 <pointsize>14</pointsize>
+                <weight>75</weight>
                 <italic>true</italic>
+                <bold>true</bold>
                 <underline>true</underline>
                </font>
               </property>
@@ -1336,24 +1193,13 @@
              </widget>
             </item>
             <item>
-             <widget class="QLabel" name="telefonlabel">
-              <property name="font">
-               <font>
-                <pointsize>16</pointsize>
-                <weight>75</weight>
-                <bold>true</bold>
-               </font>
-              </property>
-              <property name="text">
-               <string>Telefon:0507 125 3020</string>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignCenter</set>
-              </property>
-             </widget>
-            </item>
-            <item>
              <widget class="QLabel" name="epostalabel_2">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
               <property name="font">
                <font>
                 <pointsize>16</pointsize>
@@ -1371,6 +1217,12 @@
             </item>
             <item>
              <widget class="QLabel" name="instagramlabel">
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>50</height>
+               </size>
+              </property>
               <property name="font">
                <font>
                 <pointsize>16</pointsize>
@@ -1385,6 +1237,22 @@
                <set>Qt::AlignCenter</set>
               </property>
              </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>100</height>
+               </size>
+              </property>
+             </spacer>
             </item>
            </layout>
           </item>
