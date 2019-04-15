@@ -1,12 +1,5 @@
-# -*- coding: utf-8 -*-
-
-# Form implementation generated from reading ui file 'main.ui'
-#
-# Created by: PyQt5 UI code generator 5.7
-#
-# WARNING! All changes made in this file will be lost!
-
 from PyQt5 import QtCore, QtGui, QtWidgets
+import smtplib
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -416,6 +409,7 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.parolalabel)
         self.parolaline = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.parolaline.setObjectName("parolaline")
+        self.parolaline.setEchoMode(QtWidgets.QLineEdit.Password)
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.parolaline)
         spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.formLayout.setItem(3, QtWidgets.QFormLayout.LabelRole, spacerItem5)
@@ -588,6 +582,26 @@ class Ui_MainWindow(object):
         self.actionKullan_lan_Sensorler.setText(_translate("MainWindow", "Kullanılan Sensorler"))
         self.actionKullan_lan_Kartlar.setText(_translate("MainWindow", "Kullanılan Kartlar"))
         self.actionKullan_lan_Programlama_Dilleri_ve_Algoritmalar.setText(_translate("MainWindow", "Kullanılan Programlama Dilleri ve Algoritmalar"))
+        
+        self.gonder_btn.clicked.connect(self.eposta)
+        
+    def eposta(self):
+        konu = self.konuline.text()
+        mesaj = self.icerikbox.toPlainText()
+        adres = self.epostaline.text()
+        parola = self.parolaline.text()
+        
+        
+        message = 'Subject: {}\n\n{}'.format(konu, mesaj)
+        mail = smtplib.SMTP("smtp.gmail.com",587)
+        
+        mail.ehlo()
+        mail.starttls()
+        try:
+            mail.login(adres,parola)
+            mail.sendmail(adres,"cezerirobotics@gmail.com",message)
+        except:
+            pass
 
 from PyQt5 import QtWebKitWidgets
 
