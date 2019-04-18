@@ -1,15 +1,21 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'main.ui'
+#
+# Created by: PyQt5 UI code generator 5.7
+#
+# WARNING! All changes made in this file will be lost!
+
 from PyQt5 import QtCore, QtGui, QtWidgets
-import smtplib
-import time
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(1352, 794)
+        MainWindow.resize(1033, 794)
         self.centralwidget = QtWidgets.QWidget(MainWindow)
         self.centralwidget.setObjectName("centralwidget")
         self.verticalLayoutWidget_3 = QtWidgets.QWidget(self.centralwidget)
-        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(-20, 0, 1371, 901))
+        self.verticalLayoutWidget_3.setGeometry(QtCore.QRect(-20, 0, 1053, 901))
         self.verticalLayoutWidget_3.setObjectName("verticalLayoutWidget_3")
         self.verticalLayout_3 = QtWidgets.QVBoxLayout(self.verticalLayoutWidget_3)
         self.verticalLayout_3.setContentsMargins(20, 0, 0, 0)
@@ -329,7 +335,7 @@ class Ui_MainWindow(object):
         self.Tarayici_tab.setObjectName("Tarayici_tab")
         self.Tarayici = QtWebKitWidgets.QWebView(self.Tarayici_tab)
         self.Tarayici.setEnabled(True)
-        self.Tarayici.setGeometry(QtCore.QRect(0, 0, 1351, 500))
+        self.Tarayici.setGeometry(QtCore.QRect(0, 0, 1031, 500))
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -410,7 +416,6 @@ class Ui_MainWindow(object):
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.LabelRole, self.parolalabel)
         self.parolaline = QtWidgets.QLineEdit(self.formLayoutWidget)
         self.parolaline.setObjectName("parolaline")
-        self.parolaline.setEchoMode(QtWidgets.QLineEdit.Password)
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.parolaline)
         spacerItem5 = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
         self.formLayout.setItem(3, QtWidgets.QFormLayout.LabelRole, spacerItem5)
@@ -456,7 +461,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.basliklabel.setFont(font)
-        self.basliklabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.basliklabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.basliklabel.setObjectName("basliklabel")
         self.verticalLayout_11.addWidget(self.basliklabel)
         self.forminfolabel = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
@@ -468,7 +473,7 @@ class Ui_MainWindow(object):
         font.setUnderline(True)
         font.setWeight(75)
         self.forminfolabel.setFont(font)
-        self.forminfolabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.forminfolabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.forminfolabel.setObjectName("forminfolabel")
         self.verticalLayout_11.addWidget(self.forminfolabel)
         self.epostalabel_2 = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
@@ -478,7 +483,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.epostalabel_2.setFont(font)
-        self.epostalabel_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.epostalabel_2.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.epostalabel_2.setObjectName("epostalabel_2")
         self.verticalLayout_11.addWidget(self.epostalabel_2)
         self.instagramlabel = QtWidgets.QLabel(self.horizontalLayoutWidget_2)
@@ -488,7 +493,7 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.instagramlabel.setFont(font)
-        self.instagramlabel.setAlignment(QtCore.Qt.AlignCenter)
+        self.instagramlabel.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.instagramlabel.setObjectName("instagramlabel")
         self.verticalLayout_11.addWidget(self.instagramlabel)
         spacerItem7 = QtWidgets.QSpacerItem(20, 100, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Fixed)
@@ -525,7 +530,7 @@ class Ui_MainWindow(object):
         self.retranslateUi(MainWindow)
         self.Su_Sekmesi.setCurrentIndex(0)
         self.Kum_Sekmesi.setCurrentIndex(0)
-        self.Mama_Sekmesi.setCurrentIndex(0)
+        self.Mama_Sekmesi.setCurrentIndex(1)
         self.Sicaklik.setCurrentIndex(0)
         self.InternetveKameraSekmesi.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -533,7 +538,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
-        self.logolabel.setPixmap(QtGui.QPixmap("logoproje.png"))
+        self.logolabel.setText(_translate("MainWindow", "TextLabel"))
         self.sukap_label.setText(_translate("MainWindow", "Su Kabının Durumu:"))
         self.sukap_data.setText(_translate("MainWindow", "Veri Bulunamadı"))
         self.Su_Sekmesi.setTabText(self.Su_Sekmesi.indexOf(self.Su_Kabi_Sekme), _translate("MainWindow", "Su Kabı"))
@@ -560,7 +565,7 @@ class Ui_MainWindow(object):
         self.Sicaklik.setTabText(self.Sicaklik.indexOf(self.kulube_disi_tab), _translate("MainWindow", "Kulube Dışı"))
         self.InternetveKameraSekmesi.setTabText(self.InternetveKameraSekmesi.indexOf(self.Tarayici_tab), _translate("MainWindow", "İnternet Tarayıcısı"))
         self.InternetveKameraSekmesi.setTabText(self.InternetveKameraSekmesi.indexOf(self.kulubeicicanligoruntu_tab), _translate("MainWindow", "Kulube İçi Canlı Görüntü"))
-        self.iletismlogo.setPixmap(QtGui.QPixmap("logotakim.png"))
+        self.iletismlogo.setText(_translate("MainWindow", "TextLabel2"))
         self.epostalabel.setText(_translate("MainWindow", "E-Posta:"))
         self.parolalabel.setText(_translate("MainWindow", "Parola:"))
         self.konulabel.setText(_translate("MainWindow", "Konu:"))
@@ -583,41 +588,6 @@ class Ui_MainWindow(object):
         self.actionKullan_lan_Sensorler.setText(_translate("MainWindow", "Kullanılan Sensorler"))
         self.actionKullan_lan_Kartlar.setText(_translate("MainWindow", "Kullanılan Kartlar"))
         self.actionKullan_lan_Programlama_Dilleri_ve_Algoritmalar.setText(_translate("MainWindow", "Kullanılan Programlama Dilleri ve Algoritmalar"))
-        
-        self.zamanlama()
-        self.gonder_btn.clicked.connect(self.eposta)
-        
-    def eposta(self):
-        self.mail_info_label.setText("Lütfen Bekleyiniz...")
-        konu = self.konuline.text()
-        mesaj = self.icerikbox.toPlainText()
-        adres = self.epostaline.text()
-        parola = self.parolaline.text()
-        
-        message = 'Subject: {}\n\n{}'.format(konu, mesaj)
-        mail = smtplib.SMTP("smtp.gmail.com",587)
-        
-        mail.ehlo()
-        mail.starttls()
-        try:
-            mail.login(adres,parola)
-            mail.sendmail(adres,"cezerirobotics@gmail.com",message)
-            self.mail_info_label.setText("E-Posta Başarıyla Gönderildi")
-        except:
-            self.mail_info_label.setText("Yanlış Şifre")
-            
-    def zamanlama(self):
-        self.timer = QtCore.QTimer()
-        self.timer.timeout.connect(self.datamain)
-        self.timer.start(1000)
-        
-    def datamain(self):
-        try:
-            self.f = open("/dev/ttyUSB1","r")
-            self.mamakap_data.setText(self.f.readlines()[0])
-        except:
-            pass
-        
 
 from PyQt5 import QtWebKitWidgets
 

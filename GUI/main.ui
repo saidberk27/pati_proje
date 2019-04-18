@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1352</width>
+    <width>1033</width>
     <height>794</height>
    </rect>
   </property>
@@ -19,7 +19,7 @@
      <rect>
       <x>-20</x>
       <y>0</y>
-      <width>1371</width>
+      <width>1053</width>
       <height>901</height>
      </rect>
     </property>
@@ -840,7 +840,7 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>1351</width>
+           <width>1031</width>
            <height>500</height>
           </rect>
          </property>
@@ -1163,7 +1163,7 @@
                <string>Cezeri Robotics ©</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -1188,7 +1188,7 @@
                <string>Bizimle iletişme geçmek için yandaki formu doldurabilirsiniz.</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -1211,7 +1211,7 @@
                <string>E-Posta: cezerirobotics@gmail.com</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>
@@ -1234,7 +1234,7 @@
                <string>İnstagram: @proje_pati03</string>
               </property>
               <property name="alignment">
-               <set>Qt::AlignCenter</set>
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
               </property>
              </widget>
             </item>

@@ -41,9 +41,6 @@ delayMicroseconds(10);
 digitalWrite(trigPin, LOW);   
 sure = pulseIn(echoPin, HIGH); 
 uzaklik= sure /29.1/2;              
-Serial.print("Uzaklik ");  
-Serial.println(uzaklik); 
-delay(1000);
 // Mesafe Sensoru Son  
 su();
 fire();
@@ -51,63 +48,59 @@ mama();
 }
  void su(){
   if(digitalRead(2)==HIGH){// su dolu olduğunzaman 1 gösterdiğini kabul ediyoruz
-    Serial.println("su var");
+    Serial.println("sukapvar");
     delay(1000);
   }
   else{
-    Serial.println("su yok");
+    Serial.println("sukapyok");
     digitalWrite(3,HIGH);
     delay(1000);
   }
   if(digitalRead(4)== HIGH){
-    Serial.println("depo dolu");
+    Serial.println("deposudolu");
     delay(1000);
   }
   else{
-    Serial.println("depo boş ");
+    Serial.println("deposubos ");
     delay(1000);
   }
  }
-
  void fire(){
 float t = sicaklik.readTemperature();
 Serial.print("Sicaklik: ");
-Serial.print(t);
-Serial.println(" *C ");
+Serial.println(t);
 delay(1000);
 // ALARM SİSTEMİ
   if(t > 35){
-Serial.println("ateş");
+Serial.println("ates");
 digitalWrite(5,HIGH);    
   }
   else{
-    Serial.println("durum stabil");
+    Serial.println("durumstabil");
     digitalWrite(5,LOW);
+    delay(1000);
   }
 // ALARM SİSTEMİ SON
 }
- 
  void mama(){
   if(digitalRead(12) == HIGH){
-    Serial.println("kap dolu");
+    Serial.println("kapmamadolu");
     mam.write(0);
     delay(1000);
   }
     else{
-      Serial.println("kap boş");
+      Serial.println("kapmamabos");
       mam.write(180);
       delay(1000);
     }
   if(uzaklik > 5){
-    Serial.println("depo boş");
+    Serial.println("depomamabos");
     delay(1000);
   }
   else{
-    Serial.println("depo dolu");
+    Serial.println("depomamadolu");
     delay(1000);
   }
  }
  void kum(){//sonra yapılacak
-  
-  
  }
