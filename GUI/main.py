@@ -613,10 +613,25 @@ class Ui_MainWindow(object):
         
     def datamain(self):
         try:
-            self.f = open("/dev/ttyUSB1","r")
-            self.mamakap_data.setText(self.f.readlines()[0])
+            self.f = open("/dev/ttyUSB0","r")
+            veri = self.f.readlines()[0]
+            
+            print(veri)
+            if(veri.find("kapmamabos") + 1):  #find fonksiyonu özel durumu yüzünden +1 eklemek durumundayız
+                self.mamakap_data.setText("Mama Kabı Boş")
+            elif(veri.find("Sicaklik") + 1):
+                self.label.setText(veri)
+            elif(veri.find("sukapyok") + 1):
+                self.sukap_data.setText("Su Kabı Boş")
+            elif(veri.find("deposudolu") +1):
+                self.sudepo_data.setText("Su Deposu Dolu")
+            elif(veri.find("depomamadolu") + 1):
+                self.mamadepo_data.setText("Mama Deposu Dolu")
+            
+            self.kumkap_data.setText(veri)
+            
         except:
-            pass
+            self.kumkap_data.setText("except")
         
 
 from PyQt5 import QtWebKitWidgets
