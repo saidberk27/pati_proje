@@ -610,7 +610,7 @@ class Ui_MainWindow(object):
     def zamanlama(self):
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.datamain)
-        self.timer.start(410) #Arduino Delaylara Göre Yap
+        self.timer.start(100) #Arduino Delaylara Göre Yap
         
     def datamain(self):
         f = open("/dev/ttyUSB1","r")
