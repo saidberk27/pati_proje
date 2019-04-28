@@ -34,73 +34,77 @@ mam.attach(9);
 
 void loop() {
 //Mesafe Sensoru Baslangic
-digitalWrite(trigPin, LOW);  
-delayMicroseconds(5);
-digitalWrite(trigPin, HIGH); 
-delayMicroseconds(10);
-digitalWrite(trigPin, LOW);   
-sure = pulseIn(echoPin, HIGH); 
-uzaklik= sure /29.1/2;              
-// Mesafe Sensoru Son  
+             
+// Mesafe Sensoru Son
 su();
+delay(500);
 fire();
+delay(500);
 mama();
+delay(500);
 }
  void su(){
   if(digitalRead(2)==HIGH){// su dolu olduğunzaman 1 gösterdiğini kabul ediyoruz
-    Serial.println("sukapvar");
-    delay(1000);
+    Serial.print("sukapvar,");
   }
   else{
-    Serial.println("sukapyok");
+    Serial.print("sukapyok,");
     digitalWrite(3,HIGH);
-    delay(1000);
   }
   if(digitalRead(4)== HIGH){
     Serial.println("deposudolu");
-    delay(1000);
   }
   else{
-    Serial.println("deposubos ");
-    delay(1000);
+    Serial.println("deposubos");
+
   }
  }
  void fire(){
 float t = sicaklik.readTemperature();
 Serial.print("Sicaklik: ");
-Serial.println(t);
-delay(1000);
+Serial.print(t);
+Serial.print(",");
+
 // ALARM SİSTEMİ
   if(t > 35){
-Serial.println("ates");
+Serial.println("ates,");
 digitalWrite(5,HIGH);    
   }
   else{
-    Serial.println("durumstabil");
+    Serial.println("durumstabil,");
     digitalWrite(5,LOW);
-    delay(1000);
+    
   }
 // ALARM SİSTEMİ SON
 }
  void mama(){
   if(digitalRead(12) == HIGH){
-    Serial.println("kapmamadolu");
+    Serial.print("kapmamadolu,");
     mam.write(0);
-    delay(1000);
+   
   }
     else{
-      Serial.println("kapmamabos");
+      Serial.print("kapmamabos,");
       mam.write(180);
-      delay(1000);
+     
     }
   if(uzaklik > 5){
-    Serial.println("depomamabos");
-    delay(1000);
+    Serial.println("depomamabos,");
+    
   }
   else{
-    Serial.println("depomamadolu");
-    delay(1000);
+    Serial.println("depomamadolu,");
   }
  }
  void kum(){//sonra yapılacak
+ }
+ 
+ void mesafe(){
+   digitalWrite(trigPin, LOW);  
+delayMicroseconds(5);
+digitalWrite(trigPin, HIGH); 
+delayMicroseconds(10);
+digitalWrite(trigPin, LOW);   
+sure = pulseIn(echoPin, HIGH); 
+uzaklik= sure /29.1/2; 
  }

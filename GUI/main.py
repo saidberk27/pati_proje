@@ -589,46 +589,45 @@ class Ui_MainWindow(object):
         
     def eposta(self):
         self.mail_info_label.setText("Lütfen Bekleyiniz...")
-        konu = self.konuline.text()
-        mesaj = self.icerikbox.toPlainText()
-        adres = self.epostaline.text()
-        parola = self.parolaline.text()
-        
-        message = 'Subject: {}\n\n{}'.format(konu, mesaj)
-        mail = smtplib.SMTP("smtp.gmail.com",587)
-        
-        mail.ehlo()
-        mail.starttls()
         try:
+            konu = self.konuline.text()
+            mesaj = self.icerikbox.toPlainText()
+            adres = self.epostaline.text()
+            parola = self.parolaline.text()
+        
+            message = 'Subject: {}\n\n{}'.format(konu, mesaj)
+            mail = smtplib.SMTP("smtp.gmail.com",587)
+        
+            mail.ehlo()
+            mail.starttls()
+        
             mail.login(adres,parola)
             mail.sendmail(adres,"cezerirobotics@gmail.com",message)
             self.mail_info_label.setText("E-Posta Başarıyla Gönderildi")
         except:
-            self.mail_info_label.setText("Yanlış Şifre")
+            self.mail_info_label.setText("E-Posta Gönderilemedi")
             
     def zamanlama(self):
         self.timer = QtCore.QTimer()
         self.timer.timeout.connect(self.datamain)
-        self.timer.start(1000)
+        self.timer.start(410) #Arduino Delaylara Göre Yap
         
     def datamain(self):
+        f = open("/dev/ttyUSB1","r")
         try:
-            self.f = open("/dev/ttyUSB0","r")
-            veri = self.f.readlines()[0]
+            data= f.readlines()[0].split(",")
+            data0 = data[0]
+            data1 = data[1]
+            self.kumkap_data.setText(data0)
+            if(data0.find("Sicaklik") + 1):
+               self.label.setText(data0)
+            elif(data0.find("Su Kabı") + 1):
+                self.sukap_data.setText(data0)
+                self.sudepo_data.setText(data1)
+            elif(data0.find("Mama") + 1):
+                self.mamakap_data.setText(data0)
+                self.mamadepo_data.setText(data1)
             
-            print(veri)
-            if(veri.find("kapmamabos") + 1):  #find fonksiyonu özel durumu yüzünden +1 eklemek durumundayız
-                self.mamakap_data.setText("Mama Kabı Boş")
-            elif(veri.find("Sicaklik") + 1):
-                self.label.setText(veri)
-            elif(veri.find("sukapyok") + 1):
-                self.sukap_data.setText("Su Kabı Boş")
-            elif(veri.find("deposudolu") +1):
-                self.sudepo_data.setText("Su Deposu Dolu")
-            elif(veri.find("depomamadolu") + 1):
-                self.mamadepo_data.setText("Mama Deposu Dolu")
-            
-            self.kumkap_data.setText(veri)
             
         except:
             self.kumkap_data.setText("except")
