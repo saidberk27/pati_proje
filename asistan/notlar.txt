@@ -1,0 +1,6 @@
+pip install SpeechRecognition
+pip install PyAudio
+pip install playsound
+
+https://www.youtube.com/watch?v=QZZMNx1whRg
+https://www.youtube.com/watch?v=QebIJmWwXfA
